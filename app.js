@@ -1,3 +1,4 @@
+'use strict';
 let Ghazi = {
     
 
@@ -9,10 +10,15 @@ let Ghazi = {
 
     level : 'Senior',
 
+    salary : this.calculateSalary,
+
+    id : this.generateEmployeeId,
+
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
         return id;
       },
+      
 
 
     calculateSalary : function() {
@@ -34,6 +40,9 @@ let Ghazi = {
         let netSalary = salary - (salary * 0.075); 
         return netSalary;
       },
+
+      
+    
 }
 
 
@@ -275,7 +284,7 @@ let Hadi = {
 function renderEmployees() {
       
       document.write('Employee name: ' + Ghazi.FullName + '<br>');
-      document.write('Employee salary: ' + Ghazi.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Ghazi.calculateSalary()  + '<br><br>');
 
       document.write('Employee name: ' + Lana.FullName + '<br>');
       document.write('Employee salary: ' + Lana.calculateSalary() + '<br><br>');
