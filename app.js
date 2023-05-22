@@ -58,7 +58,6 @@ Employee.prototype.salary = function salary() {
   let Hadi = new Employee('Hadi Ahmad', 'Finance', 'Mid-Senior', 'https://www.google.com/search?q=men+picture&rlz=1C1GCEA_enJO999JO999&oq=men+picture+&aqs=chrome..69i57j0i512.11838j0j7&sourceid=chrome&ie=UTF-8#imgrc=yF7tTQ5yEKg6yM&bsht=Cgdic2h3Y2hwEgQIBDAB')
 
   
-   Employee.renderEmployees();
   
      
        
