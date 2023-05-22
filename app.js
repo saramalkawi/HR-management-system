@@ -10,9 +10,9 @@ let Ghazi = {
 
     level : 'Senior',
 
-    salary : this.calculateSalary,
+    salary : 0,
 
-    id : this.generateEmployeeId,
+    id : 0,
 
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
@@ -45,7 +45,8 @@ let Ghazi = {
     
 }
 
-
+Ghazi.salary = Ghazi.calculateSalary();
+Ghazi.salary = Ghazi.generateEmployeeId();
 
 
 let Lana = {
@@ -60,6 +61,11 @@ let Lana = {
     
     level : 'Senior',
 
+    salary : 0,
+
+    id : 0,
+
+
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000;
         return id;
@@ -86,7 +92,10 @@ let Lana = {
       },
     
 }
-    
+
+  Lana.salary = Lana.calculateSalary();
+  Lana.salary = Lana.generateEmployeeId();
+
     
 let Tamara = {
     
@@ -98,6 +107,11 @@ let Tamara = {
     Department : 'Marketing',
         
     level : 'Senior',
+
+    salary : 0,
+
+    id : 0,
+
 
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
@@ -125,7 +139,8 @@ let Tamara = {
       },
         
 }
-
+Tamara.salary = Tamara.calculateSalary();
+Tamara.salary = Tamara.generateEmployeeId();
 
 let Safi  = {
     
@@ -137,6 +152,11 @@ let Safi  = {
     Department : 'Administration',
             
     level : 'Mid-Senior',
+
+    salary : 0,
+
+    id : 0,
+
 
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
@@ -165,6 +185,8 @@ let Safi  = {
             
 }
 
+Safi.salary = Safi.calculateSalary();
+Safi.salary = Safi.generateEmployeeId();
 
 let Omar = {
     
@@ -176,6 +198,11 @@ let Omar = {
     Department : 'Development',
                         
     level : 'Senior',
+
+    salary : 0,
+
+    id : 0,
+
 
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
@@ -203,6 +230,9 @@ let Omar = {
       },
                         
 }
+
+Omar.salary = Omar.calculateSalary();
+Omar.salary = Omar.generateEmployeeId();
 
 let Rana = {
     
@@ -217,6 +247,11 @@ let Rana = {
                         
     level : 'Junior',
 
+    salary : 0,
+
+    id : 0,
+
+
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000; 
         return id;
@@ -244,6 +279,10 @@ let Rana = {
                         
 }
 
+Rana.salary = Rana.calculateSalary();
+Rana.salary = Rana.generateEmployeeId();
+
+
 let Hadi = {
     
                         
@@ -254,6 +293,11 @@ let Hadi = {
     Department : 'Finance',
                         
     level :'Mid-Senior',
+
+    salary : 0,
+
+    id : 0,
+
 
     generateEmployeeId : function() {
         let id = Math.floor(Math.random() * 900) + 1000;
@@ -281,28 +325,31 @@ let Hadi = {
       },
 }
 
+Hadi.salary = Hadi.calculateSalary();
+Hadi.salary = Hadi.generateEmployeeId();
+
 function renderEmployees() {
       
       document.write('Employee name: ' + Ghazi.FullName + '<br>');
-      document.write('Employee salary: ' + Ghazi.calculateSalary()  + '<br><br>');
+      document.write('Employee salary: ' + Ghazi.salary + '<br><br>');
 
       document.write('Employee name: ' + Lana.FullName + '<br>');
-      document.write('Employee salary: ' + Lana.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Lana.salary + '<br><br>');
 
       document.write('Employee name: ' + Tamara.FullName + '<br>');
-      document.write('Employee salary: ' + Tamara.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Tamara.salary + '<br><br>');
 
       document.write('Employee name: ' + Safi.FullName + '<br>');
-      document.write('Employee salary: ' + Safi.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Safi.salary + '<br><br>');
 
       document.write('Employee name: ' + Omar.FullName + '<br>');
-      document.write('Employee salary: ' + Omar.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Omar.salary + '<br><br>');
 
       document.write('Employee name: ' + Rana.FullName + '<br>');
-      document.write('Employee salary: ' + Rana.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Rana.salary + '<br><br>');
 
       document.write('Employee name: ' + Hadi.FullName + '<br>');
-      document.write('Employee salary: ' + Hadi.calculateSalary() + '<br><br>');
+      document.write('Employee salary: ' + Hadi.salary + '<br><br>');
     
   }
   renderEmployees();
