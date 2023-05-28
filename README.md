@@ -11,3 +11,8 @@
 
 ### 1.Convert the object to one constructor function.
 ### 2.Refactor the all methods to be a prototype methods. 
+
+## Lab 10  Requirements
+
+### 1.create a card for every employee.
+
